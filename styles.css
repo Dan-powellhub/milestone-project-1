@@ -256,15 +256,15 @@ footer {
 
 
 footer > span {
-	color: whitesmoke;
+	color: black;
 }
 
 footer > a {
-	color: whitesmoke;
+	color: black;
 	text-decoration: none;
 	padding: 0 15px;
 	font-size: 0.8rem;
 }
 
 footer > p {
-	color: whitesmoke;}
+	color: black;}
