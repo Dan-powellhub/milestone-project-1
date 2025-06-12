@@ -197,7 +197,7 @@ div {
     text-align: center;
     display: block;
     font-weight: bold;
-    color: #0066cc; /* Highlighted color */
+    color: #000000; /* Highlighted color */
   }
   
   div span:last-child {
