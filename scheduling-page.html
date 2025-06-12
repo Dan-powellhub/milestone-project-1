@@ -22,6 +22,24 @@
 	<a href="contacts-page.html">Contact</a>
 	</nav>
 
+  <form action="booking_script.php" method="POST">
+    <h1>Book Your Appointment</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="service">Select Service:</label>
+    <select id="service" name="service">
+      <option value="service1">Service 1</option>
+      <option value="service2">Service 2</option>
+    </select><br><br>
+    <label for="date">Choose Date:</label>
+    <input type="date" id="date" name="date"><br><br>
+    <label for="time">Choose Time:</label>
+    <input type="time" id="time" name="time"><br><br>
+    <input type="submit" value="Book Now">
+  </form>
+
 <section id="Class schedule">
     <h2 class="schedule-box">Schedule</h2>
     <div id="class-box" class="schedule-box">
