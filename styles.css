@@ -92,6 +92,83 @@ img {
   form {
     display: flex;
     flex-direction: column;
+    form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 40px auto; /* Center the form on the page */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h1 {
+    color: #007bff; /* A nice blue for the heading */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+  }
+
+  label {
+    display: block; /* Each label on its own line */
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"],
+  select {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 1em;
+  }
+
+  input[type="submit"] {
+    background-color: #28a745; /* Green for the submit button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+
+  input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+
+  /* HTML5 specific enhancements */
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+  }
+
+  legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #007bff;
+    padding: 0 10px;
+  }
+
+  p.form-description {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
   }
   
   .form-group {

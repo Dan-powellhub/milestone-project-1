@@ -23,26 +23,43 @@
 	</nav>
 
   <form action="booking_script.php" method="POST">
+  <header>
     <h1>Book a Class</h1>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
-    <label for="service">Select Class:</label>
-    <select id="service" name="service">
-      <option value="service1">BODYPUMP</option>
-      <option value="service2">HIIT</option>
-	  <option value="service3">HYROX</option>
-	  <option value="service4">BOOTCAMP</option>
-	  <option value="service5">DANCERCISE</option>
-	  <option value="service6">CIRCUITS</option>
-    </select><br><br>
-    <label for="date">Choose Date:</label>
-    <input type="date" id="date" name="date"><br><br>
-    <label for="time">Choose Time:</label>
-    <input type="time" id="time" name="time"><br><br>
-    <input type="submit" value="Book Now">
-  </form>
+    <p class="form-description">
+      Join us for an exhilarating session! Fill out the form below to secure your spot.
+    </p>
+  </header>
+
+  <fieldset>
+    <legend>Your Details</legend>
+    <label for="name">Your Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="e.g., Jane Doe" required autocomplete="name">
+
+    <label for="email">Your Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="e.g., jane.doe@example.com" required autocomplete="email">
+  </fieldset>
+
+  <fieldset>
+    <legend>Class & Schedule</legend>
+    <label for="service">Select Your Class:</label>
+    <select id="service" name="service" required>
+      <option value="">-- Please choose a class --</option> <option value="bodypump">BODYPUMP - Strength & Endurance</option>
+      <option value="hiit">HIIT - High-Intensity Interval Training</option>
+      <option value="hyrox">HYROX - Functional Fitness Race</option>
+      <option value="bootcamp">BOOTCAMP - Outdoor Fitness Challenge</option>
+      <option value="dancerise">DANCERCISE - Fun Dance Workout</option>
+      <option value="circuits">CIRCUITS - Full Body Conditioning</option>
+    </select>
+
+    <label for="date">Preferred Date:</label>
+    <input type="date" id="date" name="date" required min="2025-06-12"> <label for="time">Preferred Time:</label>
+    <input type="time" id="time" name="time" required>
+  </fieldset>
+
+  <footer>
+    <input type="submit" value="Confirm Your Booking">
+  </footer>
+</form>
 
 <section id="Class schedule">
     <h2 class="schedule-box">Schedule</h2>
