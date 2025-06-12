@@ -196,7 +196,7 @@ div {
     font-family: 'Lucinda Handwriting', sans-serif;
     text-align: center;
     display: block;
-    font-weight: bold;
+   /* font-weight: bold; */ 
     color: #000000; /* Highlighted color */
   }
   
