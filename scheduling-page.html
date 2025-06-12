@@ -23,15 +23,19 @@
 	</nav>
 
   <form action="booking_script.php" method="POST">
-    <h1>Book Your Appointment</h1>
+    <h1>Book a Class</h1>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required><br><br>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required><br><br>
-    <label for="service">Select Service:</label>
+    <label for="service">Select Class:</label>
     <select id="service" name="service">
-      <option value="service1">Service 1</option>
-      <option value="service2">Service 2</option>
+      <option value="service1">BODYPUMP</option>
+      <option value="service2">HIIT</option>
+	  <option value="service3">HYROX</option>
+	  <option value="service4">BOOTCAMP</option>
+	  <option value="service5">DANCERCISE</option>
+	  <option value="service6">CIRCUITS</option>
     </select><br><br>
     <label for="date">Choose Date:</label>
     <input type="date" id="date" name="date"><br><br>
@@ -55,7 +59,7 @@
  
 <div class="text-center">
 <h3 id="two">Pump</h3>
-
+	<h2>Every Thursday at 2pm</h2>
 <!--Following code added from bootstrap for video-->
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MoXn9knlCc4?si=LZIHDo72a-VEsXaT" allowfullscreen></iframe>
@@ -69,6 +73,7 @@ fast-paced, and effective for building lean muscle, improving endurance, and bur
   
 
 <h3 id="three">Hiit</h3>
+	<h2>Every Monday at 11am</h2>
 	<p>
 		HIIT stands for high-intensity interval training.<br>
 		It's a way of training that combines quick, intense bursts of exercise,<br>
@@ -76,6 +81,7 @@ fast-paced, and effective for building lean muscle, improving endurance, and bur
 	</p> <img src="assets/images/hiit.jpg" alt="A hiit class.">
 
 <h3 id="four">Hyrox</h3>
+	<h2>Every Friday at 9am</h2>
 	<p>A Hyrox class is a group fitness training session that prepares<br>
 individuals for the Hyrox fitness race, a global competition combining running and functional exercises.<br>
 It's designed to be challenging and accessible to all fitness levels,<br>
@@ -83,6 +89,7 @@ focusing on building strength, endurance, and functional movement skills. </p>
 ><img src="assets/images/hyrox.jpg" alt="Someone pushing a sled.">
 
 <h3 id="five">Bootcamp</h3>
+	<h2>Every Tuesday at 11am</h2>
 	<p>Bootcamp gym classes are high-intensity, group-based workouts<br>
 that blend strength training, cardio, and calisthenics, often using interval training.<br>
 They are designed to be challenging and foster a sense of community, with instructors often adopting a motivating,<br>
@@ -91,6 +98,7 @@ push-ups, squats, lunges, and sprints, potentially using weights or resistance b
 <img src="assets/images/bootcamp.jpg" alt="People taking part in an outdoor bootcamp class, doing exercises on mats.">
 
 <h3 id="six">Dancercise</h3>
+	<h2>Every Saturday at 1pm</h2>
 	<p>Dancercise is a form of exercise that combines dancing with fitness,<br>
 using choreographed dance routines to improve fitness levels.<br>
 It's a fun and energetic way to get a workout,<br>
@@ -98,6 +106,7 @@ often done in classes with instructors guiding participants through various danc
 <img src="assets/images/dancercise.jpg" alt="People enjoying doing a dancercise class.">
 
 <h3 id="seven">Circuits</h3>
+	<h2>Every Wednesday at 6pm</h2>
 Typically, a circuit training class will consist of a number of different exercise stations being set up around a room.<br>
 The participants will be split up into groups of two or three people<br>
 each starting at one specific station and doing the exercise at that station for a set period of time.
